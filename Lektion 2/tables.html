@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tabeller</title>
+  </head>
+  <body>
+    <h1>Tabeller</h1>
+    <h2>Basic</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Ingrediens</th>
+          <th>Mängd</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mjöl</td>
+          <td>5 dl</td>
+        </tr>
+        <tr>
+          <td>Mjöl</td>
+          <td>5 dl</td>
+        </tr>
+        <tr>
+          <td>Mjöl</td>
+          <td>5 dl</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>colspan och rowspan</h2>
+    <table border="1">
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+        <th>Savings for holiday!</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+        <td rowspan="2">$50</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </table>
+
+    <h2>scope</h2>
+    <table border="1">
+      <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+      </tr>
+      <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>120</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <th scope="row">Total sales:</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </table>
+  </body>
+</html>

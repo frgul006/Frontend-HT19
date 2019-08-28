@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form oninput="sumOfRanges.value=parseInt(startRange.value)+parseInt(endRange.value)">
+      <div>
+        <label for="id_firstName">First name</label>
+        <input
+          id="id_firstName"
+          name="firstName"
+          type="text"
+          maxlength="10"
+          required
+          placeholder="Skriv ditt namn här"
+        />
+      </div>
+      <div>
+        <label>Last name <input type="text" disabled name="lastName"/></label>
+      </div>
+      <div>
+        <label for="about">About me</label>
+        <textarea id="about" rows="10"></textarea>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Do you want a newsletter?</legend>
+          <input type="radio" id="newsletter-yes" name="newsletter" value="true" />
+          <label for="newsletter-yes">Yes</label>
+
+          <input type="radio" id="newsletter-no" name="newsletter" value="false" />
+          <label for="newsletter-no">No</label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>What streaming services do you use?</legend>
+          <input type="checkbox" id="streaming-netflix" value="netflix" name="streaming" />
+          <label for="streaming-netflix">Netflix</label>
+          <input type="checkbox" id="streaming-hbo" value="hbo" name="streaming" />
+          <label for="streaming-hbo">HBO</label>
+          <input type="checkbox" id="streaming-viaplay" value="viaplay" name="streaming" />
+          <label for="streaming-viaplay">Viaplay</label>
+        </fieldset>
+      </div>
+      <div>
+        <label for="gender">Kön</label>
+        <select id="gender" name="gender">
+          <option value="">Välj kön</option>
+          <option value="male">Man</option>
+          <option value="female">Kvinna</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Ålder</label>
+        <input id="age" type="number" min="18" max="130" name="age" />
+      </div>
+      <div>
+        <label for="password">Lösenord</label>
+        <input id="password" type="password" name="password" />
+      </div>
+      <div>
+        <label for="birthday">Födelsedag</label>
+        <input id="birthday" type="date" name="birthday" />
+      </div>
+      <div>
+        <label for="searchParameters">Sökparametrar</label>
+        <input id="searchParameters" type="search" name="searchParameters" />
+      </div>
+      <div>
+        <label for="email">E-post</label>
+        <input id="email" type="email" name="email" />
+      </div>
+      <div>
+        <label for="cv">CV</label>
+        <input id="cv" type="file" name="cv" />
+      </div>
+      <div>
+        <label for="someTime">A time</label>
+        <input id="someTime" type="time" name="someTime" />
+      </div>
+      <div>
+        <input type="hidden" name="customerId" value="123456" />
+        <input type="submit" value="Spara" />
+        <input type="reset" value="Nollställ" />
+      </div>
+      <div>
+        <label for="browsers">Browsers</label>
+        <input id="browsers" type="text" list="browsersList" name="browser" />
+        <datalist id="browsersList">
+          <option value="IE11">Internet Explorer 11</option>
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="startRange">Start Range</label>
+        <input type="range" id="startRange" name="startRange" value="0" />
+      </div>
+      <div>
+        <label for="endRange">End Range</label>
+        <input type="range" id="endRange" name="endRange" value="50" />
+      </div>
+      <div>
+        <output name="sumOfRanges" for="startRange endRange">0</output>
+      </div>
+    </form>
+  </body>
+</html>
