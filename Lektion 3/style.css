@@ -1,0 +1,84 @@
+#lorem {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ingress {
+  font-family: Arial;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+p {
+  font-family: Verdana;
+  font-size: 0.75em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* h2 {
+  text-transform: capitalize;
+} */
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  background-color: black;
+  color: white;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* All elements that have both the class inner-list AND tea-types */
+.inner-list.tea-types {
+  background-color: pink;
+}
+
+/* All elements that have the class tea-types where a parent has the class inner-list */
+.inner-list .tea-types {
+  background-color: orange;
+}
+
+/* 
+All elements that have the class 
+tea-types where the element ONE LEVEL above has the class inner-list 
+*/
+.inner-list > .tea-types {
+  background-color: gray;
+}
+
+.inner-list {
+  background-color: blue;
+}
+
+.tea-types {
+  background-color: red;
+}
