@@ -1,0 +1,23 @@
+.display-block {
+  display: block;
+  background-color: blue;
+  width: 100px;
+}
+
+.display-inline-block {
+  display: inline-block;
+  background-color: violet;
+  width: 100px;
+}
+
+.display-inline {
+  display: inline;
+  background-color: orange;
+  width: 100px;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+  content: '';
+}

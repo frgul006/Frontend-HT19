@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+}
+
+.content-box-parent,
+.border-box-parent {
+  border: 10px solid goldenrod;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content-box-child,
+.border-box-child {
+  border: 10px solid #5b6dcd;
+  padding: 5px;
+  width: 100%;
+}
+
+/*
+.content-box-child {
+  box-sizing: content-box;
+  width: 100%;
+  border: 10px solid #5b6dcd;
+  padding: 5px;
+}
+
+.border-box-child {
+  box-sizing: border-box;
+  width: 100%;
+  border: 10px solid #5b6dcd;
+  padding: 5px;
+} */

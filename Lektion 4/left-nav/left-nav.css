@@ -1,0 +1,32 @@
+.left-nav {
+  width: 150px;
+}
+
+.left-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.left-nav-link {
+  display: block;
+  background-color: darkslateblue;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 1px;
+}
+
+.left-nav-link:hover,
+.left-nav-link:focus {
+  background-color: aquamarine;
+  color: #333;
+}
+
+.left-nav-list-item:last-child .left-nav-link {
+  margin-bottom: 0;
+}
+
+/* li:last-child a {
+  margin-bottom: 0;
+} */
