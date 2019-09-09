@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let headerEl = document.getElementById('someHeader');
+      console.log(headerEl);
+      console.log('Script tag in header');
+    </script>
+    <script src="script1.js"></script>
+  </head>
+  <body>
+    <h1 id="someHeader">Hello World</h1>
+    <script>
+        let bodyElScriptInline = document.getElementById('someHeader');
+        console.log(bodyElScriptInline);
+        console.log('Script tag in body');
+    </script>
+    <script src="script2.js"></script>
+  </body>
+</html>
