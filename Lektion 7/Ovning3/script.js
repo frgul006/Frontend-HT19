@@ -1,4 +1,6 @@
-const cars = ['Opel', 1, 'Mercedes', 'BMW', '1,1,2', '1,4,2', [1, 3, 2], 'Array(2)', 'Tesla', 'Volvo'];
+const cars = ['Opel', 1, 'Mercedes', 'BMW', [1, 3, 2], '1,2,2', 'Tesla', 'Volvo'];
+
+// '1,3,2'
 
 cars.sort();
 
